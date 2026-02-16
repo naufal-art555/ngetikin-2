@@ -28,21 +28,18 @@ nav ul li a {
   color: black;
   letter-spacing: 2px;
 }
-.bordertext {
+
+nav ul :hover {
   box-sizing: border-box;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   border-color: black;
 }
-nav ul :hover {
-  text-decoration: underline;
-  color: black;
-}
 .hamburger {
   display: none;
 }
 /* responsif */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hamburger {
     display: flex;
   }
@@ -65,6 +62,11 @@ nav ul :hover {
   nav ul li a {
     color: white;
   }
+  nav ul :hover {
+    box-sizing: border-box;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
   .bordertext {
     display: none;
     border-color: white;
@@ -74,10 +76,5 @@ nav ul :hover {
   .navbar.active {
     display: flex;
     color: white;
-  }
-  .bordertext.active {
-    color: white;
-
-    display: flex;
   }
 }
